@@ -5,14 +5,14 @@
   viewBox="0 0 32 32"
   version="1.1"
 >
-  <style>
-    @media (prefers-color-scheme: light) {
-      :root { filter: none; }
-    }
-    @media (prefers-color-scheme: dark) {
-      :root { filter: none; }
-    }
-  </style>
+  <defs>
+    <filter id="site-palette-filter" color-interpolation-filters="sRGB">
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0.8235 0 0 0 0 1 0 0 0 1 0"
+      />
+    </filter>
+  </defs>
 
   <path
     d="m16.018 31.677c8.6026 0 15.576-6.9734 15.576-15.576
@@ -20,6 +20,7 @@
        -8.6026 0-15.576 6.9734-15.576 15.576
        0 8.6026 6.9734 15.576 15.576 15.576"
     fill="#5b2ca0"
+    filter="url(#site-palette-filter)"
   />
 
   <g transform="matrix(1.1 0 0 1.1 2.8184 2.9012)">

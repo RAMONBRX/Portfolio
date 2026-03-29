@@ -10,32 +10,32 @@
 
 /* Variáves */
 :root {
-  /* Paleta de Cores - Purple */
-  --purple-50: #f4eaff;
-  --purple-100: #e9dcfa;
-  --purple-200: #cdb3f0;
-  --purple-300: #b186e5;
-  --purple-400: #9460db;
-  --purple-500: #6b36c8;
-  --purple-600: #5b2ca0;
-  --purple-700: #4c2177;
-  --purple-800: #441f88;
-  --purple-900: #2a0e4d;
-  --purple-950: #1a0730;
+  /* Paleta de Cores - Cyan/Turquesa */
+  --navy-50: #0f172a;
+  --navy-100: #1a2a47;
+  --navy-200: #1e3a5f;
+  --navy-300: #224766;
+  --navy-400: #2d5a7b;
+  --cyan-500: #06b6d4;
+  --cyan-600: #0891b2;
+  --cyan-700: #067e8c;
+  --navy-800: #0f172a;
+  --navy-900: #0a0f1f;
+  --navy-950: #050812;
 
   /* Cores Neutras */
-  --gray-200: #e8e8e8;
-  --gray-400: #505861;
-  --black: #171717;
-  --white: #faf7ff;
+  --gray-200: #334155;
+  --gray-400: #94a3b8;
+  --black: #0f172a;
+  --white: #f0f9fa;
 
   /* Cores de Estado */
   --error: #e63946;
 
   /* Sombras */
-  --shadow-sm: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 0.25rem 0.75rem rgba(107, 54, 200, 0.3);
-  --shadow-lg: 0 0.5rem 1.5rem rgba(107, 54, 200, 0.2);
+  --shadow-sm: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 0.25rem 0.75rem rgba(6, 182, 212, 0.2);
+  --shadow-lg: 0 0.5rem 1.5rem rgba(6, 182, 212, 0.15);
 
   /* Espaçamentos */
   --spacing-xs: 0.5rem;
@@ -72,9 +72,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--white);
+  background-color: #0f172a;
   line-height: 1.6;
-  color: var(--black);
+  color: #f0f9fa;
 }
 
 main {
@@ -110,29 +110,29 @@ main {
 }
 
 .botao {
-  border-color: var(--purple-500);
-  background-color: var(--purple-500);
+  border-color: var(--cyan-600);
+  background-color: var(--cyan-600);
   color: var(--white);
 }
 
 .botao:hover {
-  border-color: var(--purple-800);
-  background-color: var(--purple-800);
-  color: var(--shadow-md);
-  transform: translateY(-00.25rem);
+  border-color: var(--cyan-500);
+  background-color: var(--cyan-500);
+  color: var(--white);
+  transform: translateY(-0.25rem);
 }
 
 .botao-outline {
-  border-color: var(--purple-500);
+  border-color: var(--cyan-500);
   background-color: transparent;
-  color: var(--purple-500);
+  color: var(--cyan-500);
 }
 
-.botao-outline:hoover {
-  border-color: var(--purple-500);
-  background-color: var(--purple-500);
+.botao-outline:hover {
+  border-color: var(--cyan-600);
+  background-color: var(--cyan-600);
   color: var(--white);
-  transform: translateY(-00.25rem);
+  transform: translateY(-0.25rem);
 }
 
 /* Botões pequenos - Card Projetos */
@@ -156,22 +156,23 @@ header {
   height: 5rem;
   border-bottom: var(--spacing-xs) solid var(--gray-200);
   box-shadow: var(--shadow-sm);
-  background-color: var(--purple-800);
+  background-color: #192452;
 }
 
 header a {
   font-weight: 600;
-  color: var(--white);
+  color: #E0E6ED;
   transition: color 0.3 ease;
 }
 
 header a:hover {
-  color: var(--purple-100);
+  color: #00D2FF;
 }
 
 #titulo {
   font-size: var(--text-2xl);
   font-weight: 700;
+  color: #E0E6ED;
 }
 
 .menu-content {
@@ -218,6 +219,7 @@ header a:hover {
 .hero-content h1 {
   font-size: var(--text-3xl);
   font-weight: 700;
+  color: var(--cyan-500);
 }
 
 .hero-content p,
@@ -270,7 +272,7 @@ header a:hover {
 
 .about-image img {
   width: 100%;
-  border: 0.35rem solid var(--purple-500);
+  border: 0.35rem solid var(--cyan-500);
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-lg);
 }
@@ -285,7 +287,7 @@ header a:hover {
   margin-bottom: var(--spacing-md);
   font-size: var(--text-3xl);
   font-weight: 700;
-  color: var(--purple-800);
+  color: var(--cyan-500);
 }
 
 .about-content p {
@@ -321,7 +323,7 @@ header a:hover {
   font-size: var(--text-xl);
   font-weight: 700;
   text-align: center;
-  color: var(--purple-500);
+  color: var(--cyan-500);
 }
 
 .data-label {
@@ -338,6 +340,10 @@ header a:hover {
   text-align: center;
 }
 
+.projects-container h2 {
+  color: var(--cyan-500);
+}
+
 .projects-swipper {
   position: relative;
   width: 100%;
@@ -352,15 +358,15 @@ header a:hover {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  border: 0.15rem solid var(--gray-200);
+  border: 0.15rem solid var(--cyan-500);
   border-radius: var(--radius-lg);
-  background-color: var(--white);
+  background-color: #1a2f4b;
   box-shadow: var(--shadow-sm);
   overflow: hidden;
   transition: var(--transition-default);
 }
 
-.project-card:hoover {
+.project-card:hover {
   box-shadow: var(--shadow-lg);
 }
 
@@ -372,8 +378,8 @@ header a:hover {
   height: 10rem;
   background: linear-gradient(
     135deg,
-    var(--purple-50) 0%,
-    var(--purple-100) 100%
+    #0f1f3f 0%,
+    #1a2f4b 100%
   );
 }
 
@@ -398,6 +404,7 @@ header a:hover {
   margin-bottom: 0.75rem;
   font-size: var(--text-lg);
   font-weight: 700;
+  color: #f0f9fa;
 }
 
 .project-content p {
@@ -416,10 +423,10 @@ header a:hover {
 .tag {
   padding: 0.375rem 0.75rem;
   border-radius: var(--radius-sm);
-  background-color: var(--purple-100);
+  background-color: #06b6d4;
   font-size: var(--text-sm);
   font-weight: 600;
-  color: var(--purple-800);
+  color: #0f172a;
 }
 
 .project-buttons {
@@ -449,26 +456,26 @@ header a:hover {
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: var(--text-lg);
-  color: var(--purple-500);
+  color: var(--cyan-500);
 }
 
 .swiper-button-next:hover:after,
 .swiper-button-prev:hover:after {
-  color: var(--purple-800);
+  color: var(--cyan-600);
 }
 
 /* Indicadores de paginação */
 .swiper-pagination-bullet {
   width: 0.75rem;
   height: 0.75rem;
-  background-color: var(--gray-200);
+  background-color: #334155;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
   width: var(--spacing-lg);
   border-radius: var(--radius-sm);
-  background-color: var(--purple-500);
+  background-color: var(--cyan-500);
 }
 
 /* Seção de contato */
@@ -481,6 +488,7 @@ header a:hover {
 /* Redes Sociais */
 .contact-info h2 {
   margin-bottom: var(--spacing-md);
+  color: var(--cyan-500);
 }
 
 .contact-info p {
@@ -503,13 +511,12 @@ header a:hover {
 
 .social-icon img {
   width: 100%;
-  filter: brightness(0) saturate(100%);
+  filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(161deg) brightness(103%) contrast(101%);
   transition: filter 0.3s ease;
 }
 
 .social-icon img:hover {
-  filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%)
-    hue-rotate(243deg) brightness(79%) contrast(91%);
+  filter: brightness(0) saturate(100%) invert(86%) sepia(92%) saturate(1000%) hue-rotate(161deg) brightness(103%) contrast(101%);
 }
 
 /* Formulário de Contato */
@@ -523,23 +530,32 @@ form {
 form label {
   font-size: var(--text-base);
   font-weight: 600;
+  color: #f0f9fa;
 }
 
 form input,
 form textarea {
   width: 100%;
   padding: 0.5rem var(--spacing-sm);
-  border: 0.25rem solid var(--gray-200);
+  border: 0.25rem solid var(--cyan-500);
   border-radius: var(--radius-md);
   font-family: inherit;
   font-size: var(--text-base);
+  background-color: #1a2f4b;
+  color: #f0f9fa;
   transition: border-color 0.3s ease;
 }
 
 form input:focus,
 form textarea:focus {
-  border-color: var(--purple-500);
+  border-color: var(--cyan-600);
   outline: none;
+  background-color: #224766;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #94a3b8;
 }
 
 form textarea {
@@ -576,7 +592,7 @@ form span {
 .sucess-content h2 {
   font-size: var(--text-3xl);
   font-weight: 700;
-  color: var(--purple-800);
+  color: var(--cyan-500);
 }
 
 .sucess-content p {
@@ -591,24 +607,23 @@ form span {
   width: 7.5rem;
   height: 7.5rem;
   border-radius: var(--radius-full);
-  background-color: var(--purple-100);
+  background-color: #1a2f4b;
 }
 
 .sucess-image img {
   width: 6rem;
   height: 6rem;
-  filter: brightness(0) saturate(100) invert(11%) sepia(69%) saturate(3759%)
-    hue-rotate(256deg) brightness(101%) contrast(96%);
+  filter: brightness(0) saturate(100%) invert(86%) sepia(92%) saturate(1000%) hue-rotate(161deg) brightness(103%) contrast(101%);
 }
 
 /* Footer */
 
 footer {
   padding: 2.5rem;
-  background: linear-gradient(to right, var(--purple-500), var(--purple-800));
+  background-color: #192452;
   font-weight: 600;
   text-align: center;
-  color: var(--white);
+  color: #E0E6ED;
 }
 
 /* Responsividade Tablet */
